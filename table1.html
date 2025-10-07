@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables Example</title>
+    <style>
+        body {
+            background-color: #f9e0e0; 
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 50px auto;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+        caption {
+            font-size: 1.8em;
+            margin: 15px 0;
+            color: #6b4e4e; 
+            font-weight: bold;
+        }
+        th {
+            background-color: #f4b4b4; /* Soft rose */
+            color: black;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        td {
+            padding: 12px;
+            text-align: center;
+            font-size: 1em;
+            border-bottom: 1px solid #f1d1d1;
+        }
+        tr:nth-child(even) td {
+            background-color: #fcecec; /* Very light pink */
+        }
+        tr:hover td {
+            background-color: #f7d6d6; /* Hover highlight */
+            transition: background 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Students for selection</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Subject</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A</td>
+            <td>Math</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A</td>
+            <td>Math</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A</td>
+            <td>Math</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A</td>
+            <td>Math</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A</td>
+            <td>Math</td>
+            <td>Kolkata</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <style>
+        body {
+            background-color: #f4f7fa;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        caption {
+            background-color: #3b4b63;
+            color: white;
+            font-size: 1.4rem;
+            padding: 15px;
+            font-weight: bold;
+        }
+        th, td {
+            padding: 14px 20px;
+            text-align: left;
+        }
+        th {
+            background-color: #556b86;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #e9eef5;
+        }
+        tr:nth-child(odd) {
+            background-color: #f7f9fc;
+        }
+        tr:hover {
+            background-color: #dbe4f0;
+            transition: 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>Sl. No</th>
+            <th>Student Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Michael Lee</td>
+            <td>21</td>
+        </tr>
+    </table>
+</body>
+</html>

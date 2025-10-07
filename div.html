@@ -1,0 +1,43 @@
+<html>
+    <style>
+        div.mycontainer {
+            width: 80%;
+            margin: 0 auto;
+            border: 2px solid #000;
+            overflow: hidden; 
+        }
+
+        div.mycontainer div {
+            width: 33.33%;
+            float: left;
+            border: 1px solid #555;
+            box-sizing: border-box; 
+            background-color: #f0f8ff;
+            padding: 10px;
+        }
+
+        div.mycontainer div:nth-child(2) {
+            background-color: #e6ffe6; 
+        }
+
+        div.mycontainer div:nth-child(3) {
+            background-color: #fff0f5; 
+        }
+    </style>
+    <body>
+        <div class="mycontainer">
+            <div>
+                <h2>Section 1</h2>
+                <p>This is the first section of the container.</p>
+            </div>
+            <div>
+                <h2>Section 2</h2>
+                <p>This is the second section of the container.</p>
+            </div>
+            <div>
+                <h2>Section 3</h2>
+                <p>This is the third section of the container.</p>
+            </div>
+        </div>
+    </body>
+</html>

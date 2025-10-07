@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise Example</title>
+</head>
+<body>
+  <h1>Promise Example</h1>
+  <p>Check the browser console for the output.</p>
+
+  <script>
+    const myPromise = new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        let success = true; // Change this to false to simulate failure
+        if (success) {
+          resolve("Operation was successful!");
+        } else {
+          reject("Operation failed.");
+        }
+      }, 1000);
+    });
+
+    myPromise
+      .then(function(result) {
+        console.log(result); // "Operation was successful!"
+      })
+      .catch(function(error) {
+        console.error(error); // "Operation failed."
+      });
+  </script>
+</body>
+</html>
+  
